@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Todo List</ion-title>
+  </ion-toolbar>
+</ion-header>
+<form [formGroup]="ionicForm">
+  <ion-item lines="full">
+    <ion-label>Task</ion-label>
+    <ion-input type="text" formControlName="taskName" required></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label>Date</ion-label>
+    <ion-input type="text" placeholder="DD/MM/YYYY" formControlName="date" required></ion-input>
+  </ion-item>
+</form>
+<ion-row>
+  <ion-col>
+    <ion-button type="button" (click)="submitForm()" color="danger" expand="block">Submit</ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-item *ngFor="let item of taskCollection">{{item.taskName}} at {{item.date}}</ion-item>
+</ion-row>

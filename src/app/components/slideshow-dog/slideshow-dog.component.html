@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dogs Slideshow</ion-title>
+  </ion-toolbar>
+</ion-header>
+<div id="containerimg">
+  <ng-image-slider #nav
+  [images]="imageObject"
+  [infinite]="false"
+  [autoSlide]="1"
+  [imageSize]="{width: '25%', height: 200}"
+  slideImage="1"></ng-image-slider>
+</div>
+
+
+
+

@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dogs Gallery</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-item>
+  <ion-label>Select Breed</ion-label>
+  <ion-select placeholder="Select Breed" #breeds (ionChange)="selectChangeHandler(breeds.value)">
+    <ion-select-option *ngFor="let item of breedCollection" [value]="item.value">
+      {{ item.value }}
+    </ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-button color="primary" (click)="submit()">Submit</ion-button>
