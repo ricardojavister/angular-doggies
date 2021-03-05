@@ -20,11 +20,11 @@ Routes
 Select Breed
 http://localhost:4200/selectbreed
 
-file:///home/rick/Videos/demo-ionic-angular-getting-doggies.gif
+https://github.com/ricardojavister/angular-doggies/blob/main/demo-ionic-angular-getting-doggies.gif
 
 http://localhost:4200/todolist
 
-file:///home/rick/Videos/demo-ionic-angular-validating-form.gif
+https://github.com/ricardojavister/angular-doggies/blob/main/demo-ionic-angular-validating-form.gif
 
 
 Technical Explanation
